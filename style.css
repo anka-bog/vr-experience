@@ -1,9 +1,8 @@
-* {
-    background-color: darkgreen;
+body {
+    color: darkgreen;
 }
 
-;
-
 p {
-    size: 2em;
+    border: solid, 2px, cornflowerblue;
+    background-color: deeppink;
 }
