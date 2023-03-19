@@ -5,7 +5,8 @@
     </head>
 
     <body>
-        <div>
+        <!-- Body wrapper starts here -->
+        <div> 
             <header>
                 <h1>Experience VR</h1>
                 <p>A <em>simple</em> blog about virtual reality experiences</p>
@@ -13,14 +14,21 @@
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Articles</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             
             <div>
+                <pre>
+                    &lt;div&gt;
+                      This is a div...
+                      &lt;p&gt;This paragraph is nested&lt;/p&gt;
+                    &lt;/div&gt;          
+                </pre>
+
                 <figure>
                     <img src="images/featured.jpg" alt="A child wearing VR gogles">
                     <figcaption>Even a child can have VR goggles, it's fun for the whole family.</figcaption>
@@ -30,7 +38,7 @@
             </div>
                 
             <main>
-                <section>
+                <section id="about">
                     <h2>About this Site</h2>
                     <p><span>Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Suspendisse vehicula metus in bibendum laoreet. Aenean libero est, egestas eu eros pretium, sodales iaculis est.</p>
                     <figure>
@@ -39,7 +47,7 @@
                     </figure>
                 </section>
         
-                <section>
+                <section id="articles">
                     <h2>Latest VR Articles</h2>
         
                     <article>
@@ -48,7 +56,7 @@
                             <p>By: Anna Ossowska</p>
                         </header>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.</p>
-                        <a href="articles/2017/article.html">Read more</a>
+                        <a href="articles/2017/article.html#vr-article">Read more</a>
                         <footer>Published: June 12, 2017</footer>
                     </article>
         
@@ -58,14 +66,14 @@
                             <p>By: Anna Ossowska</p>
                         </header>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.</p>
-                        <a href="articles/2017/article.html">Read more</a>
+                        <a href="articles/2017/article.html#vr-article">Read more</a>
                         <footer>Published: June 19, 2017</footer>
                     </article>
                 </section>
 
-                <section>
+                <section id="contact">
                     <h2>Contact</h2>
-                    <p><strong>Email:</strong> coolvrexperience@gmail.com</p>
+                    <p><strong>Email:</strong> <a href="mailto:coolvrexperience@gmail.com?subject=Hi%20There!">coolvrexperience@gmail.com</a></p>
                     <p><strong>Phone:</strong> 555-787-908</p>
                     <p><strong>Address:</strong></p>
                     <address>
@@ -94,6 +102,7 @@
             </footer>
         </div>
     </body>
+    <!-- Body wrapper ends here -->
 </html>
 
 
